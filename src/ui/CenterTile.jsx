@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { useSize } from '../SizeContext';
-import Dimension from './Dimension';
+import Dimension from '../../react-simple-dimensions/src/dimensions';
 
 
 export default function CenterTile({ children, width, height }) {
@@ -15,10 +15,10 @@ export default function CenterTile({ children, width, height }) {
       }}
     >
       <div className="m-6 mt-2">
-        <h1 className="text-3xl font-black tracking-tight text-balance text-gray-900 sm:text-7xl">
+        <div className="text-2xl lg:text-5xl font-black tracking-tight text-balance text-gray-900">
           Simple dimensions
-        </h1>
-        <p className="mt-8 text-lg font-medium text-pretty text-gray-600 sm:text-xl/8 font-mono max-w-md">
+        </div>
+        <p className="mt-8 text-sm font-medium text-pretty text-gray-600 sm:text-xl/8 font-mono max-w-xs lg:max-w-md">
           Add engineering-style dimensions to your designs with ease.
         </p>
         <div className="mt-4 flex items-center justify-center gap-x-6">

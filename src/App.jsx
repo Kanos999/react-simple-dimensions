@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, createContext } from 'react'
 import './App.css'
 import Header from './ui/header'
-import Dimension from './ui/Dimension'
+// import Dimension from '../react-simple-dimensions/src/dimensions' // Uncomment if in development mode
+import Dimension from 'react-simple-dimensions' // Use this for production
 import CenterTile from './ui/CenterTile'
 
 function easeInOutQuad(t) {
@@ -70,7 +71,7 @@ function App() {
         </div>
 
         {/* Main hero */}
-        <div className="mx-auto max-w-6xl py-20 sm:py-42 justify-center items-center flex flex-col">
+        <div className="mx-auto max-w-6xl py-20 sm:py-42 justify-center items-center flex flex-col md:scale-100">
           
           {/* Center tile */}
           <CenterTile width={width} height={height}>
