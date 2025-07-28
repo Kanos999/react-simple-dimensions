@@ -18,9 +18,9 @@ export default function Header() {
   return (
     <header className="bg-gray-300/5 backdrop-blur-sm rounded-3xl border border-gray-200/10 shadow-lg">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
-        <div className="flex text-sm/6 !font-bold lg:flex-1 text-gray-300">
+        <a className="flex text-sm/6 !font-bold !text-gray-300" href="https://www.npmjs.com/package/react-simple-dimensions" target="_blank">
           React Simple Dimensions
-        </div>
+        </a>
         
         {/* <PopoverGroup className="flex gap-x-12">
 
@@ -36,7 +36,7 @@ export default function Header() {
         </PopoverGroup> */}
         
         <div className="flex flex-1 justify-end">
-          <a href="#" className="text-sm/6 font-semibold !text-gray-400">
+          <a href="https://github.com/Kanos999/react-simple-dimensions/tree/main" target="_blank" className="text-sm/6 font-semibold !text-gray-400">
             Github
           </a>
         </div>

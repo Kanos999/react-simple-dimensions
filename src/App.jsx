@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, createContext } from 'react'
 import './App.css'
-import Header from './ui/header'
+import Header from './ui/Header'
 // import Dimension from '../react-simple-dimensions/src/dimensions' // Uncomment if in development mode
 import Dimension from 'react-simple-dimensions' // Use this for production
 import CenterTile from './ui/CenterTile'
@@ -98,7 +98,7 @@ function App() {
 
 
         {/* Footer */}
-        <div className="h-auto mx-auto p-8 fixed bottom-0 z-50 font-mono opacity-50">Made with {"<3"} by @Kanos999 </div>
+        <a className="h-auto mx-auto p-8 fixed bottom-0 z-50 font-mono !text-gray-400 opacity-50" href="https://kanejackson.com" target='_blank'>Made with {"<3"} by @Kanos999 </a>
 
         {/* Background glows */}
         <div

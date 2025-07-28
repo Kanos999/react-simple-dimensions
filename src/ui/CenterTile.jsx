@@ -23,7 +23,7 @@ export default function CenterTile({ children, width, height }) {
         </p>
         <div className="mt-4 flex items-center justify-center gap-x-6">
           <a
-            href="#"
+            href="https://www.npmjs.com/package/react-simple-dimensions"
             className="group relative rounded-md bg-gray-200 px-4 py-3 my-2 hover:my-1 hover:px-5 hover:py-4 hover:rounded-lg text-sm font-bold !text-black shadow-md pointer hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 transition-all duration-200"
           >
             <div className="w-full h-full opacity-0 group-hover:opacity-100 transition-oall duration-200">
