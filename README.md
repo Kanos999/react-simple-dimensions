@@ -5,7 +5,6 @@
 **A lightweight React component for rendering engineering-style dimension lines.**  
 Ideal for design tools, measurement overlays, and technical UI representations.
 
----
 
 ## ✨ Features
 
@@ -14,8 +13,6 @@ Ideal for design tools, measurement overlays, and technical UI representations.
 - Auto-measures parent element on resize
 - Pure React, no dependencies beyond `react` and `react-dom`
 - Suitable for design aids, developer tools, or educational visualizations
-
----
 
 ## 🚀 Installation
 
