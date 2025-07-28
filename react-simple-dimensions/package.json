@@ -1,6 +1,6 @@
 {
   "name": "react-simple-dimensions",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React component for engineering-style dimension lines",
   "main": "dist/dimensions.umd.js",
   "module": "dist/dimensions.es.js",
@@ -12,7 +12,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build"
   },
-  "keywords": ["sketch", "dimensions", "react", "engineerging", "drawing"],
+  "keywords": [
+    "sketch",
+    "dimensions",
+    "react",
+    "engineerging",
+    "drawing"
+  ],
   "author": "Kane Jackson",
   "license": "ISC",
   "type": "module",
