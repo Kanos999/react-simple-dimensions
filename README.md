@@ -1,12 +1,21 @@
-# React + Vite
+# react-simple-dimensions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A lightweight React component for rendering engineering-style dimension lines.**  
+Ideal for design tools, measurement overlays, and technical UI representations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Draws dimension lines (`top`, `bottom`, `left`, `right`) around any element
+- Supports units: `px`, `rem`, `em`, `pt`
+- Auto-measures parent element on resize
+- Pure React, no dependencies beyond `react` and `react-dom`
+- Suitable for design aids, developer tools, or educational visualizations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Installation
+
+```bash
+npm install react-simple-dimensions
