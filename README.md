@@ -48,3 +48,14 @@ function Example() {
   );
 }
 ```
+
+## Usage
+
+| Prop       | Type                                           | Required | Default | Description                                                               |
+| ---------- | ---------------------------------------------- | -------- | ------- | ------------------------------------------------------------------------- |
+| `position` | `"top"` \| `"bottom"` \| `"left"` \| `"right"` | ✅ Yes    | —       | Specifies which side of the parent to place the dimension line            |
+| `color`    | `string`                                       | ❌ No     | —       | Color of the dimension lines and label text (e.g., `'yellow'`, `'#fff'`)  |
+| `units`    | `"px"` \| `"rem"` \| `"em"` \| `"pt"`          | ✅ Yes    | —       | Unit to convert and display the measured distance in                      |
+| `angle`    | `number`                                       | ❌ No     | —       | Reserved for future use (e.g., angled dimensions); currently unused       |
+| `distance` | `number` \| `"auto"`                           | ✅ Yes    | —       | Fixed length in pixels, or `"auto"` to stretch across full element side   |
+| `offset`   | `number`                                       | ❌ No     | `0`     | Distance (in px) to offset the dimension line from the edge of the parent |

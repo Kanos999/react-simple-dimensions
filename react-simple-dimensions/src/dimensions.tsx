@@ -101,7 +101,7 @@ const Dimension: React.FC<DimensionProps> = ({
     position: 'absolute',
     margin: 0,
     padding: 0,
-    color,
+    color: color || 'black',
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
@@ -120,8 +120,8 @@ const Dimension: React.FC<DimensionProps> = ({
     styles.top = -offset - 1.5 * tickLength;
     styles.left = 0;
     styles.right = 0;
-    styles.borderLeft = `1px solid ${color}`;
-    styles.borderRight = `1px solid ${color}`;
+    styles.borderLeft = `1px solid ${color || 'black'}`;
+    styles.borderRight = `1px solid ${color || 'black'}`;
 
     return (
       <div style={styles}>
@@ -130,7 +130,7 @@ const Dimension: React.FC<DimensionProps> = ({
           style={{
             width: '100%',
             height: 'auto',
-            borderBottom: `1px solid ${color}`,
+            borderBottom: `1px solid ${color || 'black'}`,
             bottom: `calc(100% - ${tickLength / 2}px)`,
             position: 'absolute',
             padding: 0,
@@ -147,8 +147,8 @@ const Dimension: React.FC<DimensionProps> = ({
     styles.bottom = -offset - 1.5 * tickLength;
     styles.left = 0;
     styles.right = 0;
-    styles.borderLeft = `1px solid ${color}`;
-    styles.borderRight = `1px solid ${color}`;
+    styles.borderLeft = `1px solid ${color || 'black'}`;
+    styles.borderRight = `1px solid ${color || 'black'}`;
 
     return (
       <div style={styles}>
@@ -157,7 +157,7 @@ const Dimension: React.FC<DimensionProps> = ({
           style={{
             width: '100%',
             height: 'auto',
-            borderTop: `1px solid ${color}`,
+            borderTop: `1px solid ${color || 'black'}`,
             top: `calc(100% - ${tickLength / 2}px)`,
             position: 'absolute',
             padding: 0,
@@ -175,9 +175,8 @@ const Dimension: React.FC<DimensionProps> = ({
     styles.top = 0;
     styles.bottom = 0;
     styles.height = distance === 'auto' ? '100%' : `${distance}px`;
-    styles.borderTop = `1px solid ${color}`;
-    styles.borderBottom = `1px solid ${color}`;
-    styles.color = color;
+    styles.borderTop = `1px solid ${color || 'black'}`;
+    styles.borderBottom = `1px solid ${color || 'black'}`;
     styles.textAlign = 'center';
     styles.display = 'flex';
     styles.flexDirection = 'row';
@@ -189,7 +188,7 @@ const Dimension: React.FC<DimensionProps> = ({
           style={{
             height: '100%',
             width: 'auto',
-            borderLeft: `1px solid ${color}`,
+            borderLeft: `1px solid ${color || 'black'}`,
             left: `calc(100% - ${tickLength / 2}px)`,
             position: 'absolute',
             padding: 0,
@@ -208,9 +207,8 @@ const Dimension: React.FC<DimensionProps> = ({
     styles.top = 0;
     styles.bottom = 0;
     styles.height = distance === 'auto' ? '100%' : `${distance}px`;
-    styles.borderTop = `1px solid ${color}`;
-    styles.borderBottom = `1px solid ${color}`;
-    styles.color = color;
+    styles.borderTop = `1px solid ${color || 'black'}`;
+    styles.borderBottom = `1px solid ${color || 'black'}`;
     styles.textAlign = 'center';
     styles.display = 'flex';
     styles.flexDirection = 'row';
@@ -222,7 +220,7 @@ const Dimension: React.FC<DimensionProps> = ({
           style={{
             height: '100%',
             width: 'auto',
-            borderRight: `1px solid ${color}`,
+            borderRight: `1px solid ${color || 'black'}`,
             right: `calc(100% - ${tickLength / 2}px)`,
             position: 'absolute',
             padding: 0,
