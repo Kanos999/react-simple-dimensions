@@ -51,6 +51,8 @@ function Example() {
 
 ## Usage
 
+Add the `Dimension` component as a child to the component you want to dimension, then customise with props:
+
 | Prop       | Type                                           | Required | Default | Description                                                               |
 | ---------- | ---------------------------------------------- | -------- | ------- | ------------------------------------------------------------------------- |
 | `position` | `"top"` \| `"bottom"` \| `"left"` \| `"right"` | ✅ Yes    | —       | Specifies which side of the parent to place the dimension line            |
